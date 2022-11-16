@@ -1,0 +1,1 @@
+{"name":"Local: Palindrome","url":"/home/amol/Documents/vs/array/Palindrome.java","tests":[{"id":1668000237831,"input":"5\n1 2 6","output":"Not palindrome"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/amol/Documents/vs/array/Palindrome.java","group":"local","local":true}

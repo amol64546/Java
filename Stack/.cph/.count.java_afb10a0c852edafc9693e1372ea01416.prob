@@ -1,0 +1,1 @@
+{"name":"Local: count","url":"/home/amol/Documents/vs/Stack/count.java","tests":[{"id":1665654374668,"input":"5\n6 8 0 7 3","output":"0 1 0 1 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/amol/Documents/vs/Stack/count.java","group":"local","local":true}

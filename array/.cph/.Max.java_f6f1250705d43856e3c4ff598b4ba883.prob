@@ -1,0 +1,1 @@
+{"name":"Local: Max","url":"/home/amol/Documents/vs/array/Max.java","tests":[{"id":1664454198624,"input":"3\n1 2 3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/amol/Documents/vs/array/Max.java","group":"local","local":true}

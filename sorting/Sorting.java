@@ -14,7 +14,7 @@ public class Sorting {
         // selection();
         // insertion();
         // insertion2();
-        insertion3();
+       
         System.out.println(Arrays.toString(arr));
        
     }
@@ -38,6 +38,7 @@ public class Sorting {
     static void  selection(){
         for(int i=0; i<n-1; i++){
             int minIndex=i;
+            // selecting min value index
             for(int j=i+1; j<n; j++){
                 if(arr[minIndex]>arr[j])
                     minIndex = j;                
@@ -47,42 +48,36 @@ public class Sorting {
         }
     }
 
-    static void  insertion3(){
+ 
+
+       static void  insertion(){
         for(int i=1; i<n; i++){
             int temp = arr[i];
-            int j=i-1;
-            while(j>=0 && temp<arr[j]){
-                arr[j+1] = arr[j];
-                j--;
+            int j=i;
+            while(j>0 && temp<arr[j-1]){
+                arr[j] = arr[j-1];   
+                j--;           
             }
-            arr[j+1]=temp;
+            arr[j]=temp;
         }
-    }
-    
-    static void  insertion(){
-        for(int i=1; i<n; i++){
-            for(int j=i-1; j>=0; j--){
-                if(arr[j]<arr[j+1]){
-                    swap(j, j+1);
-                }else{
-                    break;
-                }
-            }
-        }
-    }
 
-    static void  insertion2(){
-        for(int i=0; i<n-1; i++){
-            for(int j=i; j>=0; j--){
-                if(arr[j]>arr[j+1]){
-                    swap(j, j+1);
-                }else{
-                    break;
-                }
-            }
-        }
+static void insertion2()
+  {
+     
+      for(int i=0; i<n-1; i++){
+          for(int j=i+1; j>0; j--){
+              if(arr[j]<arr[j-1]){
+                  int temp = arr[j];
+                  arr[j] = arr[j-1];
+                  arr[j-1] = temp;
+              }else
+                break;
+          }
+      }
+      
+      
+  }
     }
-
 
     
 

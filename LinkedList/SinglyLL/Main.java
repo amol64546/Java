@@ -19,8 +19,8 @@ public class Main {
         for(int i=0; i<m; i++){
             l2.addLast(arr2[i]);
         }        
-        Node head = Merge.merge(l1.head, l2.head);
-        Print.print(head);
+        
+        
         
         
     }    

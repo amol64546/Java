@@ -1,0 +1,378 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinaryS",
+            "request": "launch",
+            "mainClass": "BinaryS",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch HCF",
+            "request": "launch",
+            "mainClass": "HCF",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch HCF2",
+            "request": "launch",
+            "mainClass": "HCF2",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Max",
+            "request": "launch",
+            "mainClass": "Max",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Prime",
+            "request": "launch",
+            "mainClass": "Prime",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeSum",
+            "request": "launch",
+            "mainClass": "PrimeSum",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reverse",
+            "request": "launch",
+            "mainClass": "Reverse",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotCCW90",
+            "request": "launch",
+            "mainClass": "RotCCW90",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotCW90",
+            "request": "launch",
+            "mainClass": "RotCW90",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfDia",
+            "request": "launch",
+            "mainClass": "SumOfDia",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfDigits",
+            "request": "launch",
+            "mainClass": "SumOfDigits",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfNo",
+            "request": "launch",
+            "mainClass": "SumOfNo",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Swap",
+            "request": "launch",
+            "mainClass": "Swap",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Transpose",
+            "request": "launch",
+            "mainClass": "Transpose",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch armstrong",
+            "request": "launch",
+            "mainClass": "armstrong",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayRot",
+            "request": "launch",
+            "mainClass": "array.ArrayRot",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayRot2",
+            "request": "launch",
+            "mainClass": "array.ArrayRot2",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvenOdd",
+            "request": "launch",
+            "mainClass": "array.EvenOdd",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestNo",
+            "request": "launch",
+            "mainClass": "array.LargestNo",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Max(1)",
+            "request": "launch",
+            "mainClass": "array.Max",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Palindrome",
+            "request": "launch",
+            "mainClass": "array.Palindrome",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch PeakElement",
+            "request": "launch",
+            "mainClass": "array.PeakElement",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch remove_even",
+            "request": "launch",
+            "mainClass": "array.remove_even",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch reverse",
+            "request": "launch",
+            "mainClass": "array.reverse",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch secLargest",
+            "request": "launch",
+            "mainClass": "array.secLargest",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch secondLargestIndex",
+            "request": "launch",
+            "mainClass": "array.secondLargestIndex",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch basePower",
+            "request": "launch",
+            "mainClass": "basePower",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch fib",
+            "request": "launch",
+            "mainClass": "fib",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch fib_last2digits",
+            "request": "launch",
+            "mainClass": "fib_last2digits",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch leapYear",
+            "request": "launch",
+            "mainClass": "leapYear",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch matMulti",
+            "request": "launch",
+            "mainClass": "matMulti",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch BallPen",
+            "request": "launch",
+            "mainClass": "oops.Abstraction.BallPen",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "oops.constructor_this_keyword.Main",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cat",
+            "request": "launch",
+            "mainClass": "oops.encapsulation.pkg1.Cat",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dog",
+            "request": "launch",
+            "mainClass": "oops.encapsulation.pkg1.Dog",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Human",
+            "request": "launch",
+            "mainClass": "oops.encapsulation.pkg2.Human",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Man",
+            "request": "launch",
+            "mainClass": "oops.encapsulation.pkg2.Man",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Laptop",
+            "request": "launch",
+            "mainClass": "oops.inheritance.Laptop",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch PC",
+            "request": "launch",
+            "mainClass": "oops.inheritance.PC",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sum",
+            "request": "launch",
+            "mainClass": "oops.method_overloading.Sum",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "oops.method_overriding.Main",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "oops.super_keyword.Main",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Base",
+            "request": "launch",
+            "mainClass": "oops2.Constructor.Base",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Namaste",
+            "request": "launch",
+            "mainClass": "oops2.Constructor.Namaste",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Student",
+            "request": "launch",
+            "mainClass": "oops2.Constructor.Student",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "oops2.Encapsulation.Main",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodOverloading",
+            "request": "launch",
+            "mainClass": "oops2.Polymorphism.MethodOverloading",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodOverriding",
+            "request": "launch",
+            "mainClass": "oops2.Polymorphism.MethodOverriding",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindrome",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch power",
+            "request": "launch",
+            "mainClass": "power",
+            "projectName": "vs_edeed099"
+        },
+        {
+            "type": "java",
+            "name": "Launch spiral",
+            "request": "launch",
+            "mainClass": "spiral",
+            "projectName": "vs_edeed099"
+        }
+    ]
+}

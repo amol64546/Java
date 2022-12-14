@@ -21,6 +21,8 @@ public class Swap
         // a = a + b;
         // b = a - b;
         // a = a - b;
+
+//a = (a+b) - (b=a)
         
         // numbers
          a = a ^ b;        

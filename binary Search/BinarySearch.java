@@ -5,8 +5,8 @@ public class BinarySearch {
         int[] arr = {1,2,3,4,5,6,7,8,9};
         
         int target = 2;
-        // int index = binarySearch(arr,target);
-        int index = RecBinarySearch(arr, target, 0, arr.length-1);
+        int index = binarySearch(arr,target);
+        //int index = RecBinarySearch(arr, target, 0, arr.length-1);
         System.out.println(index);
     }
 

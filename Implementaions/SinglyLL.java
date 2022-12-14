@@ -160,8 +160,6 @@ class MyLL{
         return node;
     }
     
-    Node reverse(){
-        
-    }
+    
 }
 

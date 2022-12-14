@@ -17,10 +17,5 @@ public class HCF2 {
      return gcd1(b, a%b);
    }
 
-   public static int gcd2(int a, int b){            
-     if(a%b==0)
-        return b;  
-     else                
-        return gcd2(b, a%b);
-   }
+   
 }

@@ -10,13 +10,13 @@ public class secLargest
         if(n<2)
             return -1;
             
-        for(int i=0; i<n; i++){
-            if(arr[i]>max){
+        for(int val: arr){
+            if(val>max){
                 secMax=max;
-                max=arr[i];
+                max=val;
             }
-            else if(arr[i]!=max && arr[i]>secMax){
-                secMax = arr[i];
+            else if(val!=max && val>secMax){
+                secMax = val;
             }
         }
         

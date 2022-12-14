@@ -11,7 +11,7 @@ public class Prime {
          System.out.println(n + " neither prime or composite");
       } else {
          String check = "Prime";
-         for (int i = 2; i < n; i++) {   // <=n/2  or <=Math.sqrt(n)
+         for (int i = 2; i <= Math.sqrt(n); i++) { 
             if (n % i == 0) {
                check = "Composite";
                break;

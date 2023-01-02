@@ -7,12 +7,14 @@ public class HCF2 {
       Scanner sc = new Scanner(System.in);
       int a = sc.nextInt();
       int b = sc.nextInt();
-     System.out.print(gcd1(a,b));     
+     System.out.println(gcd(a,b)); 
+         int lcm = (a * b) / gcd;
+       System.out.print(lcm);    
 
    }
    
    // RECURSION
-   public static int gcd1(int a, int b){            
+   public static int gcd(int a, int b){            
      if(b==0)  return a;          
      return gcd1(b, a%b);
    }

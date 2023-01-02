@@ -17,14 +17,6 @@ public class HCF {
           hcf--;
       }
 
-	 // from forward
-	//  int hcf=0;
-	// 	for(int i=1; i<=Math.min(a,b); i++ ){
-	// 	    if(a%i==0 && b%i==0){
-	// 			hcf=i;
-	// 		}
-	//  	}
-		
 	  System.out.print(hcf);
 
 

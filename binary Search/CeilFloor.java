@@ -40,3 +40,24 @@ public class CeilFloor {
 
     }
 }
+
+public static int[] floorAndCeil(int target, int[] arr) {
+    int n = arr.length;       
+    int[] ans = new int[2];     
+    int l=0, r=n-1; 
+    while(l<=r){                
+            int mid = l+(r-l)/2;            
+            if(arr[mid]>target){
+                r=mid-1;
+            }else if(arr[mid]<target){                               
+                l = mid+1;
+            }else{
+                Arrays.fill(ans,arr[mid]);                        
+                return ans;
+            }
+        }   
+    ans[0] = (r==-1) ? -1:arr[r];   
+    ans[1] = (l==n) ?  -1:arr[l];           
+    return ans;
+       
+}

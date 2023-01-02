@@ -11,20 +11,22 @@ public class Swap
 		
         int a = 2;	
         int b = 4;
-         System.out.println(a +" "+ b);
+        System.out.println(a +" "+ b);
         
-        // int temp = a;
-        //     a = b;
-        //     b = temp;
+         // 1
+         int t = a;
+             a = b;
+             b = t;
         
-        // numbers
-        // a = a + b;
-        // b = a - b;
-        // a = a - b;
+        // 2
+         a = a + b;
+         b = a - b;
+        a = a - b;
 
-//a = (a+b) - (b=a)
+        // 3
+        a = (a+b) - (b=a)
         
-        // numbers
+        // 4
          a = a ^ b;        
          b = a ^ b;
          a = a ^ b;

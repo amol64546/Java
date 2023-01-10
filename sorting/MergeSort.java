@@ -14,23 +14,25 @@ public class MergeSort {
         mergeSort(arr, l, mid, r);
     }
 
-    public static void mergeSort(int[] arr, int l, int mid, int r){
-        int[]temp = new int[arr.length];
-        int i=l, j=mid+1, k=l;
-        while(i<=mid && j<=r){
-            if(arr[i]<=arr[j])
-                temp[k++]=arr[i++];
-            else
-                temp[k++]=arr[j++];
-        }
-        while(i<=mid){
-            temp[k++]=arr[i++];
-        }
-        while(j<=r){
-            temp[k++]=arr[j++];
-        }
-        for(int p=l; p<=r; p++){
-            arr[p]=temp[p];
-        }        
+    public static void mergeSort(int[] arr, int l, int m, int r){
+       int[] temp = new int[r-l+1];
+         int i=l, j=m+1;
+         int k = 0;
+         while(i<=m && j<=r){
+             if(arr[i]<=arr[j])
+                temp[k++] = arr[i++];
+             else
+                temp[k++] = arr[j++];
+             
+         }
+          while(i<=m)
+                temp[k++] = arr[i++];
+         
+          while(j<=r)
+                temp[k++] = arr[j++];
+            
+        for(int p=l,t=0; p<=r; p++,t++){
+            arr[p] = temp[t];
+        }    
     }    
 }

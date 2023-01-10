@@ -46,6 +46,7 @@ public class matMulti {
             }           
         }
 
+        // output
         for (int i = 0; i < r1; i++) {      
             for (int j = 0; j < c2; j++) 
                 System.out.print(ans[i][j]+" ");            

@@ -2,29 +2,36 @@ import java.util.*;
 import java.io.*;
 
 public class fib {
+
+    static long nthFibonacci(long n){       
+        if(n<=1) return n;
+        return nthFibonacci(n-1) +nthFibonacci(n-2) ;
+    }
+
+     static long nthFibonacci2(long n){       
+        long f1=0,f2=1,f3=0;      
+      for(long i=2; i<=n; i++){
+          f3 = (f1 + f2) % 1000000007;       
+          f1 = f2;
+          f2 = f3;
+      }
+           return f3;
+    }
+
+   static void printFibonacci(long n){
+          long[] f = new long[n + 1];
+       f[0] = 0;
+       f[1] = 1;
+       for (long i = 2; i <= n; i++) {
+          f[i] = f[i - 1] + f[i - 2];
+      }
+      System.out.print(Arrays.toString(f));
+   }
+     
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
-      int n = sc.nextInt();
-      
-      long n1=0,n2=1,n3=0;
-      // System.out.print(n1+" "+n2);
-      for(int i=2; i<n; i++){
-          n3=n1+n2;
-         //  System.out.print(" "+n3);
-          n1=n2;
-          n2=n3;
-      }
-      System.out.print(n3);
-      
-      // long[] f = new long[n + 1];
-      // f[0] = 0;
-      // f[1] = 1;
-      // for (int i = 2; i <= n; i++) {
-      //    f[i] = f[i - 1] + f[i - 2];
-      // }
-      // System.out.print(f[n]);
-
-     
+      int n = sc.nextInt();  
+      System.out.print(nthFibonacci2(n));
 
    }
 }

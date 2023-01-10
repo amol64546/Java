@@ -7,36 +7,28 @@ public class QuickSort {
     }
 
 
-    public static void quicksort(int[] arr, int l, int r){
-//        if(l>=r) return;  // base case
-      if(l<r){
-         int p = partition(arr, l, r);
-        quicksort(arr, l, p-1);
-        quicksort(arr, p+1, r);
-      }
-       
+    static void quickSort(int arr[], int low, int high)
+    {
+        if(low>=high) return;
+        int pi = partition(arr,low,high);
+        quickSort(arr,low,pi-1);
+        quickSort(arr,pi+1,high);
     }
-
-    public static void swap(int[] arr, int a, int b){
-        int k = arr[a];
-        arr[a] = arr[b];
-        arr[b] = k;
-    }
-
-    public static int partition(int[] arr, int l, int r){
-        int mid = (l+r)/2;
-        int pivot = arr[mid];
-        int i=l, j=r;
-        while(i<j){
-            while(i<=r && arr[i]<=pivot)
-                i++;            
-            while(arr[j]>pivot)
-                j--;
-            if(i<j)
-                swap(arr, i, j);        
+    static int partition(int arr[], int low, int high)
+    {
+        // your code here
+        int pivot = arr[high];
+        int i=low, j=low;
+        while(i<=high){
+            if(arr[i]<=pivot){
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+                i++; j++;
+            }else{
+                i++;
+            }
         }
-        swap(arr, j, mid);       
-
-        return j;
-    }
+        return j-1;
+    } 
 }

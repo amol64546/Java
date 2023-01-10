@@ -8,10 +8,12 @@ public class fib {
         return nthFibonacci(n-1) +nthFibonacci(n-2) ;
     }
 
-     static long nthFibonacci2(long n){       
-        long f1=0,f2=1,f3=0;      
+     static long nthFibonacci2(long n){   
+        if(n<=1) return n;    
+        long f1=0,f2=1,f3=0;  
+        long mod = (long) 1e9+7;    
       for(long i=2; i<=n; i++){
-          f3 = (f1 + f2) % 1000000007;       
+          f3 = (f1 + f2) % mod;       
           f1 = f2;
           f2 = f3;
       }

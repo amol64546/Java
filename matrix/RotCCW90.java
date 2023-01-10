@@ -4,7 +4,7 @@ import java.io.*;
 
 public class RotCCW90
 {
-    public static int[][] function(int[][] matrix, int n, int m){
+    public static int[][] rotateCCW(int[][] matrix, int n, int m){
       
         // transpose
        for(int i=0; i<n; i++){
@@ -42,7 +42,7 @@ public class RotCCW90
 			   matrix[i][j]=sc.nextInt();
 		  }
 	  }
-	  function(matrix, n,m);
+	  rotateCCW(matrix, n,m);
 	 
 	 
       for(int i=0; i<n; i++){

@@ -11,32 +11,16 @@ public class Palindrome {
             arr[i] = sc.nextInt();
         }
 
-        int[] newArr = new int[n];
-        for (int i = 0; i < n; i++) {
-            newArr[i] = arr[n - i - 1];
+        int i=0, j=n-1;
+        while(i<j){
+           if(arr[i]!=arr[j]) {
+               System.out.print("Not palindrome");
+                  break;
+             }
+i            i++; j--;
         }
+       System.out.print("palindrome");
 
-        // boolean flag = false;
-        // for (int i = 0; i < n; i++) {
-        // flag = false;
-        // if (newArr[i] == arr[i]) {
-        // flag = true;
-        // }
-        // }
-
-        // String flag = "Palindrome";
-        // for (int i = 0; i < n; i++) {
-        // if (newArr[i] != arr[i]) {
-        // flag = "Not palindrome";
-        // }
-        // }
-        // System.out.print(flag);
-
-        if (Arrays.equals(arr, newArr)) { // arr == newArr
-            System.out.print("palindrome");
-        } else {
-            System.out.print("Not palindrome");
-        }
 
     }
 }

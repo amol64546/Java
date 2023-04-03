@@ -12,26 +12,35 @@ class ArrayRot{
 		
 	}
 	
-	public static int[] solve(int[] arr, int n, int k){
-	    int[] temp = new int[n];
-	    for(int i=0; i<n; i++){    
-	       int index = (i+k)%n;         // {5,6,  1,2,3,4};    
-	       //int index = (i+(n-k))%n;       // {3,4,5,6,  1,2};
-	       temp[index]=arr[i];
-	    }
-	    return temp;
-	}
-
-     public static int[] solve2(int[] arr, int n, int k){
-        int newArr[] = new int[n]; 
-        // {5,6,  1,2,3,4};
-        for(int i=0, m = n-k; m<n; i++,m++)
-            newArr[i]= arr[m];                  
-              
-        for(int i=0, m=k; m<n; i++,m++)
-           newArr[m]= arr[i];         
+	
+	public void solve2(int[] nums,int n, int k) {		
+		k = k%n;        
+		reverse(nums,0,n-1);    // reverse whole arr
+		reverse(nums,0,k-1);	// reverse first k elements
+		reverse(nums,k,n-1);	// reverse rest elements
+		return nums;
+	   }
     
-         return newArr;
+	public void reverse(int[] arr, int i,int j){
+		while(i<j){
+		    int temp = arr[i];
+		    arr[i] = arr[j];
+		    arr[j] = temp;
+		    i++; j--;
+		}
+   	}	
+
+     public static int[] solve(int[] arr, int n, int k){
+        int aux[] = new int[n]; 
+        // {5,6,  1,2,3,4};
+	     int idx = 0;
+        for(int i=n-k; i<n; i++)
+            aux[idx++]= arr[m];                  
+              
+        for(int i=0; i<n-k; i++)
+           aux[idx++]= arr[i];         
+    
+         return aux;
     }
 }
 

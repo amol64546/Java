@@ -16,19 +16,18 @@ public class QuickSort {
     }
     static int partition(int arr[], int low, int high)
     {
-        // your code here
-        int pivot = arr[high];
-        int i=low, j=low;
-        while(i<=high){
-            if(arr[i]<=pivot){
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-                i++; j++;
-            }else{
+        int i=low, pivot = arr[high];
+        for(int j=low; j<=high; j++){
+            if(arr[j]<=pivot){
+                if(i!=j){
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
                 i++;
             }
         }
-        return j-1;
+        
+        return i-1;
     } 
 }

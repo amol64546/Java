@@ -1,6 +1,30 @@
 
 
 public class MinMax {
+
+    public static int[] findMinMax(int[] arr) {
+        int l = 0, r = arr.length - 1;
+        int n = arr.length;
+
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+
+            if (arr[mid] < arr[r]) {
+                r = mid;
+            } else if (arr[mid] > arr[r]) {
+                l = mid + 1;
+            } else { // arr[mid] == arr[r], can't determine side, shrink right
+                r--;
+            }
+        }
+
+        int minIndex = l;
+        int min = arr[minIndex];
+        int max = arr[(minIndex - 1 + n) % n];
+
+        return new int[]{min, max};
+    }
+    
     public static int findMin(int[] arr) {
         int l=0, r=arr.length-1;    
         

@@ -20,7 +20,7 @@ public class MinMax {
 
         int minIndex = l;
         int min = arr[minIndex];
-        int max = arr[(minIndex - 1 + n) % n];
+        int max = arr[(minIndex - 1 + n) % n]; // max will be on left // +n)%n for rotated
 
         return new int[]{min, max};
     }
